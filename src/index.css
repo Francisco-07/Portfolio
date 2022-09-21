@@ -1,0 +1,71 @@
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  color: white;
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus,
+input:focus {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f;
+  color: white;
+  font-family: 'MyFont';
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+@font-face {
+  font-family: 'MyFont';
+  src: local('NimbusSansNovusT-UltraLight'),
+    url('./fonts/NimbusSansNovusT-UltraLight.ttf') format('truetype');
+}

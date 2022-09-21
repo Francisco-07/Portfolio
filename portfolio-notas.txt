@@ -1,0 +1,10 @@
+falta
+menu hamburguesa con animacion.
+agregar react mail
+imagenes e info de los proyectos cuando esten listos
+revisar el codigo
+pop up de imagenes en los proyectos, boton info en android proyectos, revisar los titles
+revisar font size, widht, height, margin padding 1x1
+cambiar utils por css vars
+cambiar tags a tags semanticos
+borrar todo el css y re escribirlo
