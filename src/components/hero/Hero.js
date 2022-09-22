@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import { colors, device, size } from '../../utils'
 import { FiArrowDownRight } from 'react-icons/fi'
 import ShowDate from '../date/ShowDate'
+import { useInView } from 'react-intersection-observer'
 
 function Hero() {
+  const [ref, inView] = useInView({ triggerOnce: true })
   return (
-    <Container>
+    <Container ref={ref} inView={inView}>
       <NavbarHeight />
       <HeroContainer>
         <Wrapper>
@@ -37,6 +39,11 @@ function Hero() {
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
+  opacity: ${({ inView }) => (inView ? '1' : '0')};
+  transform: ${({ inView }) =>
+    inView ? 'translate(0px, 0px);' : 'translate(-50px, 0px);'};
+  filter: ${({ inView }) => (inView ? 'blur(0px)' : 'blur(4px)')};
+  transition: all 1s;
 `
 const NavbarHeight = styled.div`
   height: 60px;
