@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 import { colors, device } from '../../utils'
 import { IoIosArrowDown } from 'react-icons/io'
+import { useInView } from 'react-intersection-observer'
 
 const ShowDate = () => {
+  const [ref, inView] = useInView({ triggerOnce: true })
   const date = Date().split(' ')
   const month = date[1].toUpperCase()
   const day = date[2]
 
   return (
     <a href='#about'>
-      <Circle>
+      <Circle ref={ref} inView={inView}>
         <Text>
           <span>{day}</span>
           <span>{month}</span>

@@ -34,15 +34,25 @@ function Contact() {
       <Container ref={ref} inView={inView}>
         <Wrapper ref={form} onSubmit={sendEmail}>
           <div>
-            <DataInputs type='text' name='nombre' placeholder='NOMBRE' />
+            <DataInputs
+              type='text'
+              name='nombre'
+              placeholder='Nombre'
+              required
+            />
           </div>
 
           <div>
-            <DataInputs type='email' name='email' placeholder='EMAIL' />
+            <DataInputs
+              type='email'
+              name='email'
+              placeholder='Email'
+              required
+            />
           </div>
 
           <div>
-            <Text name='mensaje' placeholder='MENSAJE'></Text>
+            <Text name='mensaje' placeholder='Mensaje' required></Text>
           </div>
           <Btn type='submit' value='Send'>
             ENVIAR
