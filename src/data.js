@@ -97,7 +97,7 @@ const projects = [
       'Mongo DB',
     ],
     delay: '1.3',
-    linkProject: 'https://shopeccommerce.herokuapp.com/',
+    linkProject: 'https://ecom.adaptable.app/',
     linkRepo: 'https://github.com/Francisco-07/ecom-2',
     img: '/assets/ecom.jpg',
     alt: 'Ecommerce',
